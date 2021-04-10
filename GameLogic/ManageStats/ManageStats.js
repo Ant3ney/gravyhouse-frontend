@@ -36,7 +36,7 @@ var ManageStats = {
 
         //Initing player
         ManageStats.player = new Player();
-        ManageStats.setPPower(1999);//For testing
+        ManageStats.setPPower(10);
         ManageStats.setPName("Anthony", "Cavuoti");
         ManageStats.setPGender("m");
         ManageStats.setPEffectivness(1);
