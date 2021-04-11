@@ -31,9 +31,8 @@ var staticConversation = {
         });
     },
     endConversationProcedure: (dialogChanged, exit) => {
-        if(storyLogic.checkForUnhandledStory()){
-            storyLogic.fillChapterQueAndChapter();
-        }
+        alert('on Ch: ' + staticConversation.chapter);
+        fillQueWithUnhandledStory();
         if(storyLogic.chaptersLeft()){
             staticConversation.index = 0;
             staticConversation.chapter = storyLogic.deQueChapter();
@@ -112,4 +111,9 @@ var staticConversation = {
     }
 }
 
+function fillQueWithUnhandledStory(){
+    if(storyLogic.checkForUnhandledStory()){
+        storyLogic.fillChapterQueAndChapter();
+    }
+}
 export default staticConversation;
