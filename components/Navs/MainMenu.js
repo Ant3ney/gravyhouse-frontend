@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { View, Text, Button } from "react-native";
 import gameDriver from "../../GameLogic/GameDriver";
 import storyLogic from "../../GameLogic/StoryLogic";
-import staticConveration from "../../GameLogic/Conversation/staticConversation";
 import basic from "../../Styles/basics";
 import testCharacters from "../../GameLogic/PresetsAndTemplates/testCharacters";
 
@@ -22,7 +21,7 @@ function MainMenu(props){
                      gameDriver.giveNavigator(props.navigation);
 
                      //At this point this is a check to see if this is the users first time playing
-                     /* If true then */staticConveration.procBegining(true);
+                     /* If true then */
                      if(storyLogic.checkForUnhandledStory()){
                         storyLogic.fillChapterQueAndChapter();
                      }

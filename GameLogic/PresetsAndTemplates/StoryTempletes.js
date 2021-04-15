@@ -1,7 +1,7 @@
-import staticConversation from "../Conversation/staticConversation";
 import characters from "../ManageStats/Characters";
 import mStats from "../ManageStats/ManageStats";
 import Dialog from "../Conversation/Dialog";
+let staticConversation = {};
 
 var storyTempletes = [
     (dialogChanged, exit) => {

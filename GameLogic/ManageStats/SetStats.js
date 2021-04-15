@@ -1,4 +1,3 @@
-import staticConversation from "../Conversation/staticConversation";
 import characters from "../PresetsAndTemplates/testCharacters";
 import storyLogic from "../StoryLogic";
 
@@ -495,7 +494,6 @@ function SetStats(){
             gameDriver.awake(data);
 
             //At this point this is a check to see if this is the users first time playing
-            staticConversation.procBegining(true);
             if(storyLogic.checkForUnhandledStory()){
                 console.log("Initing story");
                 storyLogic.fillChapterQueAndChapter();

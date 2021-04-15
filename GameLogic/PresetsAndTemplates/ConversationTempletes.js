@@ -1,6 +1,6 @@
 import mStats from "../ManageStats/ManageStats";
 import Dialog from "../Conversation/Dialog";
-import staticConversation from "../Conversation/staticConversation";
+let staticConversation = {};
 
 var ConversationTempletes = [
     (dialogChanged, exit) => {

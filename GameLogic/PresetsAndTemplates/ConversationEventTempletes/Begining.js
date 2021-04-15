@@ -1,7 +1,7 @@
-import staticConversation from "../../Conversation/staticConversation";
 import mStats from "../../ManageStats/ManageStats";
 import Dialog from "../../Conversation/Dialog";
 import characters from "../../ManageStats/Characters";
+let staticConversation = {}
 
 var beginingTemplete = (dialogChanged, exit) => {
     var subJect01Obj = mStats.getRandomCharacter();

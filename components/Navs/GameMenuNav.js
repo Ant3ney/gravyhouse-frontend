@@ -4,7 +4,6 @@ import Content from "../content/Content";
 import LevelReport from "../content/LevelReport";
 import ShiftHub from "../content/ShiftHub";
 import Conversation from "../content/Conversation";
-import staticConversation from "../../GameLogic/Conversation/staticConversation";
 import Loading from "../Loading";
 import Win from "../content/Win";
 import Lose from "../content/Lose";
@@ -19,7 +18,7 @@ function GameMenuNav(props){
                 headerShown: false
              }}
             >
-                {staticConversation.begining 
+                {true
                 ?
                 <Stack.Screen
                  name="Begin Story"

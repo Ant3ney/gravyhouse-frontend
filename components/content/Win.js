@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, Button } from "react-native";
 import mStats from "../../GameLogic/ManageStats/ManageStats";
 import storyLogic from "../../GameLogic/StoryLogic";
-import staticConveration from "../../GameLogic/Conversation/staticConversation";
 
 function Win(props){
     return(
@@ -24,8 +23,7 @@ function Win(props){
                     if(storyLogic.checkForUnhandledStory()){
                         console.log("Initing story");
                         storyLogic.fillChapterQueAndChapter();
-                        console.log("storyLogic.chapterQue.lengrth + " + storyLogic.getChapterQue().length)
-                        staticConveration.begining = true;
+                        console.log("storyLogic.chapterQue.lengrth + " + storyLogic.getChapterQue().length);
                     }
                 
                     props.navigation.navigate("Begin Conversation");
